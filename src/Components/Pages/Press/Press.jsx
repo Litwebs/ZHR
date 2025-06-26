@@ -33,66 +33,63 @@ const Press = () => {
   };
 
   return (
-    <div ref={sectionRef} className="press-section">
-      <div className="press-gallery">
+    <div ref={sectionRef} className='press-section'>
+      <div className='press-gallery'>
         <div
-          className={`press-item ${isVisible ? "animate-in" : "animate-out"}`}
-        >
+          className={`press-item ${isVisible ? "animate-in" : "animate-out"}`}>
           <h2
             className={`press-title ${
               isVisible ? "animate-in" : "animate-out"
-            }`}
-          >
+            }`}>
             'Desi' Inspired Press-ons
           </h2>
-          <img src={img3} alt="Press-On Nails" />
-          <p className="des">
+          <img src={img3} alt='Press-On Nails' />
+          <p className='des'>
             Custom Press-On Nails: Featuring Our Signature Design. This set,
             influenced by traditional Desi art, is available for custom orders.
             Interested in a one-of-a-kind design?
           </p>
-          <button className="submit-btn" onClick={scrollToForm}>
+          <button className='submit-btn' onClick={scrollToForm}>
             Enquire now
           </button>
         </div>
-        <img src={img} alt="" className="rug" />
+        <img src={img} alt='' className='rug' />
       </div>
 
       {/* Contact Form Section */}
-      <div className="contact-section" ref={formRef}>
+      <div className='contact-section' ref={formRef}>
         <h2
           className={`contact-title ${
             isVisible ? "animate-in" : "animate-out"
-          }`}
-        >
+          }`}>
           Press-ons Contact Form
         </h2>
         <form
+          action='https://formsubmit.co/ZHR.nails@hotmail.com'
           // action="https://formsubmit.co/ZHR.nails@hotmail.com"
-          action="https://usebasin.com/f/8a72e7850b52"
-          method="POST"
+          // action="https://usebasin.com/f/8a72e7850b52"
+          method='POST'
           className={`contact-form ${isVisible ? "animate-in" : "animate-out"}`}
-          id="local-form"
-        >
-          <div className="input-group">
+          id='local-form'>
+          <div className='input-group'>
             <input
-              type="text"
-              name="first_name"
-              placeholder="First Name"
+              type='text'
+              name='first_name'
+              placeholder='First Name'
               required
             />
             <input
-              type="text"
-              name="last_name"
-              placeholder="Last Name"
+              type='text'
+              name='last_name'
+              placeholder='Last Name'
               required
             />
           </div>
-          <input type="email" name="email" placeholder="Email" required />
-          <input type="tel" name="phone" placeholder="Phone Number" required />
-          <div className="input-group">
-            <select name="service_type" required>
-              <option value="" disabled selected>
+          <input type='email' name='email' placeholder='Email' required />
+          <input type='tel' name='phone' placeholder='Phone Number' required />
+          <div className='input-group'>
+            <select name='service_type' required>
+              <option value='' disabled selected>
                 Shape*
               </option>
               <option>Almond</option>
@@ -101,8 +98,8 @@ const Press = () => {
               <option>Stiletto</option>
               <option>Oval</option>
             </select>
-            <select name="nail_shape" required>
-              <option value="" disabled selected>
+            <select name='nail_shape' required>
+              <option value='' disabled selected>
                 Length*
               </option>
               <option>Short</option>
@@ -111,9 +108,9 @@ const Press = () => {
               <option>Extra-Long</option>
             </select>
           </div>
-          <div className="input-group">
-            <select name="number_of_sets" required>
-              <option value="" disabled selected>
+          <div className='input-group'>
+            <select name='number_of_sets' required>
+              <option value='' disabled selected>
                 Number of sets*
               </option>
               <option>1</option>
@@ -128,11 +125,10 @@ const Press = () => {
               <option>10</option>
             </select>
             <select
-              name="location"
+              name='location'
               required
-              onChange={(e) => setLoc(e.target.value)}
-            >
-              <option value="" disabled selected>
+              onChange={(e) => setLoc(e.target.value)}>
+              <option value='' disabled selected>
                 Location*
               </option>
               <option>UK</option>
@@ -141,18 +137,17 @@ const Press = () => {
           </div>
           {loc === "International" && (
             <input
-              type="text"
-              name="location"
-              placeholder="Location"
+              type='text'
+              name='location'
+              placeholder='Location'
               required
             />
           )}
           <textarea
-            name="message"
-            placeholder="Type your message here..."
-            required
-          ></textarea>
-          <button type="submit" className="submit-btn">
+            name='message'
+            placeholder='Type your message here...'
+            required></textarea>
+          <button type='submit' className='submit-btn'>
             Enquire Now
           </button>
         </form>
