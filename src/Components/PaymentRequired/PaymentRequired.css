@@ -1,0 +1,31 @@
+.payment-required{
+  max-width:720px;
+  margin:24px auto;
+  padding:16px;
+  border:1px solid #e6e6e6;
+  border-radius:8px;
+  text-align:center;
+  background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,0.03);
+}
+.payment-required h2{
+  margin:0 0 8px 0;
+  font-size:20px;
+}
+.payment-required p{
+  color:#555;
+  margin:0 0 12px 0;
+}
+.pr-actions{
+  display:flex;
+  justify-content:center;
+}
+.pr-button{
+  background:#0070f3;
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+}
+.pr-button:hover{opacity:0.95}
